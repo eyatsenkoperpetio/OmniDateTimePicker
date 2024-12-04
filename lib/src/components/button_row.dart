@@ -1,14 +1,17 @@
 import 'package:flutter/material.dart';
 
 class ButtonRow extends StatelessWidget {
+
   const ButtonRow({
     super.key,
     required this.onCancelPressed,
     required this.onSavePressed,
+    this.textStyle
   });
 
   final void Function() onCancelPressed;
   final void Function() onSavePressed;
+  final TextStyle? textStyle;
 
   @override
   Widget build(BuildContext context) {
@@ -22,6 +25,7 @@ class ButtonRow extends StatelessWidget {
             onPressed: onCancelPressed,
             child: Text(
               localizations.cancelButtonLabel,
+              style: textStyle,
             ),
           ),
         ),
@@ -34,6 +38,7 @@ class ButtonRow extends StatelessWidget {
             onPressed: onSavePressed,
             child: Text(
               localizations.okButtonLabel,
+              style: textStyle,
             ),
           ),
         ),
