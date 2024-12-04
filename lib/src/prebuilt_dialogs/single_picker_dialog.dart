@@ -32,6 +32,7 @@ class SinglePickerDialog extends StatelessWidget {
   final OmniDateTimePickerType? type;
 
   final TextStyle? bottomButtonsTextStyle;
+  final Widget? buttonRow;
 
   const SinglePickerDialog({
     super.key,
@@ -56,6 +57,7 @@ class SinglePickerDialog extends StatelessWidget {
     this.borderRadius,
     this.constraints,
     this.type,
+    this.buttonRow,
     this.bottomButtonsTextStyle
   });
 
@@ -105,6 +107,7 @@ class SinglePickerDialog extends StatelessWidget {
                   ),
                 ),
               ),
+              buttonRow ??
               ButtonRow(
                 textStyle: bottomButtonsTextStyle,
                 onCancelPressed: () {
