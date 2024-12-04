@@ -1,0 +1,28 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "omni_date_time_picker",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "omni_date_time_picker (profile mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "omni_date_time_picker (release mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "omni_date_time_picker (Flutter Tests)",
+            "program": "test",
+            "request": "launch",
+            "type": "dart"
+        }
+    ]
+}

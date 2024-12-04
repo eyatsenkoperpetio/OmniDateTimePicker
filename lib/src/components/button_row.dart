@@ -21,27 +21,45 @@ class ButtonRow extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
         Expanded(
-          child: TextButton(
-            onPressed: onCancelPressed,
-            child: Text(
-              localizations.cancelButtonLabel,
-              style: textStyle,
+          child: Padding(
+          padding: const EdgeInsets.only(left: 10, bottom: 10),
+          child: Container(
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(15),
+                color: Theme.of(context).colorScheme.primary
             ),
-          ),
+            child: TextButton(
+                onPressed: onCancelPressed,
+                child: Text(
+                  localizations.cancelButtonLabel,
+                  style: textStyle,
+                ),
+              ),
+            )
+          )
         ),
         const SizedBox(
           height: 20,
-          child: VerticalDivider(),
+          child: VerticalDivider(color: Colors.transparent),
         ),
         Expanded(
-          child: TextButton(
-            onPressed: onSavePressed,
-            child: Text(
-              localizations.okButtonLabel,
-              style: textStyle,
+          child: Padding(
+          padding: const EdgeInsets.only(right: 10, bottom: 10),
+          child: Container(
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(15),
+                color: Theme.of(context).colorScheme.primary
             ),
-          ),
-        ),
+            child: TextButton(
+                onPressed: onSavePressed,
+                child: Text(
+                  localizations.okButtonLabel,
+                  style: textStyle,
+                ),
+              ),
+            )
+          )
+        )
       ],
     );
   }
