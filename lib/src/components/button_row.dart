@@ -22,7 +22,7 @@ class ButtonRow extends StatelessWidget {
       children: [
         Expanded(
           child: Padding(
-          padding: const EdgeInsets.only(left: 10, bottom: 10),
+          padding: const EdgeInsets.only(left: 10, bottom: 20),
           child: Container(
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(15),
@@ -44,7 +44,7 @@ class ButtonRow extends StatelessWidget {
         ),
         Expanded(
           child: Padding(
-          padding: const EdgeInsets.only(right: 10, bottom: 10),
+          padding: const EdgeInsets.only(right: 10, bottom: 20),
           child: Container(
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(15),
