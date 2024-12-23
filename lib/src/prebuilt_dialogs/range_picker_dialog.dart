@@ -204,6 +204,7 @@ class _RangePickerDialogState extends State<RangePickerDialog>
                   ),
                 ),
               ),
+              const SizedBox(height: 7),
               ButtonRow(
                 onCancelPressed: () {
                   Navigator.of(context).pop<DateTime>();

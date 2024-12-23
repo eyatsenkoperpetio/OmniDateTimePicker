@@ -105,6 +105,7 @@ class SinglePickerDialog extends StatelessWidget {
                   ),
                 ),
               ),
+              const SizedBox(height: 7),
               ButtonRow(
                 textStyle: bottomButtonsTextStyle,
                 onCancelPressed: () {
